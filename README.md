@@ -38,7 +38,7 @@ All in `scripts/`, run from a host with `kubectl` access to the cluster:
 - `starve.sh`: CPU starvation with an optional primary kill
 - `nemesis.sh` and `campaign.sh`: randomized runs with 2–3 faults each (pod kills, Postgres kills, multiorch and gateway kills, standby freezes), half of them with the VM's CPU pinned to one host core. Logs from every component, the operator and Kubernetes events are kept per run.
 - `twostandby.sh`: both standby pods force-deleted a few seconds apart, optionally followed by a multiorch kill
-- `authchurn.sh` and `psqlrepro.sh`: logins during primary crashes (the repro for #1728)
+- `authchurn.sh` and `psqlrepro.sh`: logins during primary crashes (the repro for [#1728](https://github.com/multigres/multigres/issues/1728))
 
 The scripts assume a cluster named `hac` in namespace `ha`, `ackcheck` at `/tmp/ackcheck`, and, for `campaign.sh`, a QEMU VM it can pin with `taskset`. They were written for this lab; adjust names before reusing them.
 
@@ -92,12 +92,12 @@ Notes:
 
 - "Longest outage" is the longest gap with no acknowledged commit from any writer.
 - In the `two-*` runs both standbys are down at once, so synchronous commits wait until one is back; the ~20 s gaps there are expected under `AT_LEAST_2`.
-- Two runs are not in the table: `nem-1` (I reused a run id, so its keys collided with an earlier run) and `nem-0811-5`, where the shard never got a writable primary again (multigres/multigres#1729).
+- Two runs are not in the table: `nem-1` (I reused a run id, so its keys collided with an earlier run) and `nem-0811-5`, where the shard never got a writable primary again ([multigres/multigres#1729](https://github.com/multigres/multigres/issues/1729)).
 
 ## What it found
 
-- **multigres/multigres#1728.** When Postgres on the primary crashes, the gateway answers logins with the correct password with `28P01 password authentication failed`. Reproduced on demand, with plain `psql` too: 10 of 3,031 logins over 3 crashes.
-- **multigres/multigres#1729.** Once, after two standby pods were killed 16 s apart under CPU starvation, the shard stayed without a writable primary for more than 45 minutes while the operator's resources reported `Healthy`. Not reproduced in 8 targeted trials. Logs and config are in `results/incident-stall-0811/`.
+- **[multigres/multigres#1728](https://github.com/multigres/multigres/issues/1728).** When Postgres on the primary crashes, the gateway answers logins with the correct password with `28P01 password authentication failed`. Reproduced on demand, with plain `psql` too: 10 of 3,031 logins over 3 crashes.
+- **[multigres/multigres#1729](https://github.com/multigres/multigres/issues/1729).** Once, after two standby pods were killed 16 s apart under CPU starvation, the shard stayed without a writable primary for more than 45 minutes while the operator's resources reported `Healthy`. Not reproduced in 8 targeted trials. Logs and config are in `results/incident-stall-0811/`.
 
 ## Unverified: 42 acknowledged writes missing in `forcekill-5`
 
