@@ -1,0 +1,53 @@
+{
+  "run": "graceful-1",
+  "attempts": 7231,
+  "acked": 7163,
+  "failed": 22,
+  "ambiguous": 46,
+  "lost_acked": 0,
+  "ambiguous_present": 44,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:20:33.984",
+  "last_event": "05:22:35.646",
+  "outages": [
+    {
+      "from": "05:21:18.097",
+      "to": "05:21:19.241",
+      "seconds": 1.143725,
+      "errors_in_window": 5,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:21:49.406",
+      "to": "05:21:50.812",
+      "seconds": 1.406145,
+      "errors_in_window": 1,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:21:56.573",
+      "to": "05:21:59.332",
+      "seconds": 2.759021,
+      "errors_in_window": 8,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:22:25.254",
+      "to": "05:22:26.455",
+      "seconds": 1.201114,
+      "errors_in_window": 1,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "context deadline exceeded": 22,
+    "timeout: context deadline exceeded": 46
+  },
+  "ok_latency_ms": {
+    "p100": 3199,
+    "p50": 22,
+    "p95": 704,
+    "p99": 1395
+  }
+}

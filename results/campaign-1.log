@@ -1,0 +1,12 @@
+07:17:35 nem-0717-1 pin=1 faults=[46:freeze-standby 64:pgkill-primary ]
+RESULT nem-0717-1 acked=42523 failed=68 ambiguous=0 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=16.5 pin=1
+07:22:12 nem-0722-2 pin=1 faults=[90:pgkill-primary 116:kill-primary-pod ]
+RESULT nem-0722-2 acked=40639 failed=8421 ambiguous=0 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=55.6 pin=1
+07:26:50 nem-0726-3 pin=1 faults=[80:kill-multiorch 152:kill-standby-pod ]
+RESULT nem-0726-3 acked=46064 failed=0 ambiguous=0 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=0.0 pin=1
+07:31:28 nem-0731-4 pin=1 faults=[73:kill-multiorch 148:freeze-standby ]
+RESULT nem-0731-4 acked=45746 failed=0 ambiguous=0 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=0.0 pin=1
+07:36:06 nem-0736-5 pin=0 faults=[51:pgkill-primary 132:pgkill-standby ]
+RESULT nem-0736-5 acked=87387 failed=19 ambiguous=0 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=2.3 pin=0
+07:41:06 nem-0741-6 pin=0 faults=[58:pgkill-primary 114:kill-gateway 144:kill-standby-pod ]
+RESULT nem-0741-6 acked=82838 failed=3106 ambiguous=8 LOST=0 amb_present=6 unexpected=0 syncwarn=0 max_outage=8.3 pin=0

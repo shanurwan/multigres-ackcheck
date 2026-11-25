@@ -1,0 +1,12 @@
+07:52:21 nem-0752-1 pin=1 faults=[55:pgkill-primary 132:kill-primary-pod 157:kill-primary-pod ]
+RESULT nem-0752-1 acked=36806 failed=6635 ambiguous=8 LOST=0 amb_present=0 unexpected=0 syncwarn=0 max_outage=45.5 pin=1
+07:57:03 nem-0757-2 pin=1 faults=[136:kill-standby-pod 170:kill-standby-pod ]
+RESULT nem-0757-2 acked=31276 failed=0 ambiguous=40 LOST=0 amb_present=40 unexpected=0 syncwarn=0 max_outage=12.1 pin=1
+08:01:48 nem-0801-3 pin=1 faults=[105:freeze-standby 167:pgkill-primary 173:kill-primary-pod ]
+RESULT nem-0801-3 acked=18474 failed=18362 ambiguous=57 LOST=0 amb_present=57 unexpected=0 syncwarn=0 max_outage=16.5 pin=1
+08:06:28 nem-0806-4 pin=1 faults=[134:kill-primary-pod 153:freeze-standby ]
+RESULT nem-0806-4 acked=24932 failed=8320 ambiguous=24 LOST=0 amb_present=8 unexpected=0 syncwarn=0 max_outage=37.7 pin=1
+08:11:09 nem-0811-5 pin=1 faults=[78:kill-standby-pod 92:kill-standby-pod 108:kill-multiorch ]
+RESULT nem-0811-5 verify-failed pin=1
+STOP: loss or verify failure in nem-0811-5; state preserved
+CAMPAIGN_DONE

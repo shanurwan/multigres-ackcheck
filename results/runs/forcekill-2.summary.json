@@ -1,0 +1,31 @@
+{
+  "run": "forcekill-2",
+  "attempts": 41902,
+  "acked": 41894,
+  "failed": 0,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:09:08.495",
+  "last_event": "05:11:08.475",
+  "outages": [
+    {
+      "from": "05:09:41.155",
+      "to": "05:09:44.926",
+      "seconds": 3.770694,
+      "errors_in_window": 8,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "timeout: context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 1878,
+    "p50": 12,
+    "p95": 37,
+    "p99": 61
+  }
+}

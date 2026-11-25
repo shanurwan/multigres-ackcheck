@@ -1,0 +1,41 @@
+08:44:52 still stuck? psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  database is
+08:44:55 RECOVERY STEP 1: SIGKILL postgres on primary pod 2
+08:45:06 +10s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:45:16 +20s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:45:27 +31s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:45:37 +41s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:45:47 +51s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:46:00 +64s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:46:13 +77s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:46:24 +88s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:46:34 +98s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:46:44 +108s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:46:55 +119s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:47:05 +129s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:47:15 +139s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:47:28 +152s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:47:41 +165s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:47:52 +176s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:02 +186s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:12 +196s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:22 +206s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:32 +216s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:42 +226s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:48:56 +240s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:49:09 +253s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:49:19 +263s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:49:29 +273s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:49:40 +284s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:49:50 +294s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:50:00 +304s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:50:10 +314s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:50:24 +328s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:50:37 +341s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: timeout e] shard=Healthy
+08:50:47 +351s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:50:57 +361s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:51:08 +372s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:51:18 +382s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+08:51:28 +392s write=[psql: error: connection to server at "10.43.57.167", port 5432 failed: FATAL:  n] shard=Healthy
+0: primary_conninfo = 'port=5432 user=postgres application_name=zone-a_p-945b40ec dbname=postgres passfile=/var/lib/pooler/ 
+1: synchronous_standby_names = 'ANY 1 ("zone-a_p-ba5dbb55", "zone-a_p-e06035be", "zone-a_p-945b40ec")' primary_conninfo = 'port=5432 user=postgres application_name=zone-a_p-ba5dbb55 dbname=postgres passfile=/var/lib/pooler/ 
+2: synchronous_standby_names = 'ANY 1 ("zone-a_p-e06035be", "zone-a_p-945b40ec")' 

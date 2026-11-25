@@ -1,0 +1,38 @@
+{
+  "run": "nem-0801-3",
+  "attempts": 36893,
+  "acked": 18474,
+  "failed": 18362,
+  "ambiguous": 57,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 57,
+  "failed_present": 1,
+  "unexpected_rows": 0,
+  "first_event": "08:01:49.926",
+  "last_event": "08:05:49.891",
+  "outages": [
+    {
+      "from": "08:04:03.823",
+      "to": "08:04:20.305",
+      "seconds": 16.482058,
+      "errors_in_window": 57,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 8,
+    "28P01 password authentication failed for user \"postgres\"": 5,
+    "57P03 database is temporarily unavailable; please retry": 319,
+    "57P03 no writable primary is currently available": 18030,
+    "timeout: context deadline exceeded": 57
+  },
+  "ok_latency_ms": {
+    "p100": 2010,
+    "p50": 21,
+    "p95": 301,
+    "p99": 550
+  }
+}

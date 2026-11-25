@@ -1,0 +1,28 @@
+{
+  "run": "freeze-1",
+  "attempts": 3336,
+  "acked": 3272,
+  "failed": 38,
+  "ambiguous": 26,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 26,
+  "failed_present": 6,
+  "unexpected_rows": 0,
+  "first_event": "05:32:38.611",
+  "last_event": "05:35:11.193",
+  "outages": null,
+  "error_kinds": {
+    "57014 canceling statement due to statement timeout": 6,
+    "context deadline exceeded": 32,
+    "timeout: context deadline exceeded": 26
+  },
+  "ok_latency_ms": {
+    "p100": 151,
+    "p50": 10,
+    "p95": 41,
+    "p99": 60
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "run": "forcekill-3",
+  "attempts": 9771,
+  "acked": 9647,
+  "failed": 92,
+  "ambiguous": 32,
+  "lost_acked": 0,
+  "ambiguous_present": 24,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:11:29.031",
+  "last_event": "05:13:29.454",
+  "outages": [
+    {
+      "from": "05:12:25.837",
+      "to": "05:12:32.287",
+      "seconds": 6.449831,
+      "errors_in_window": 23,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:12:55.863",
+      "to": "05:12:56.949",
+      "seconds": 1.08653,
+      "errors_in_window": 3,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "57P03 no writable primary is currently available": 3,
+    "context deadline exceeded": 89,
+    "timeout: context deadline exceeded": 32
+  },
+  "ok_latency_ms": {
+    "p100": 2949,
+    "p50": 15,
+    "p95": 385,
+    "p99": 1220
+  }
+}

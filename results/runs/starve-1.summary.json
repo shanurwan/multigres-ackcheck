@@ -1,0 +1,34 @@
+{
+  "run": "starve-1",
+  "attempts": 52629,
+  "acked": 52621,
+  "failed": 0,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:47:23.373",
+  "last_event": "05:50:23.320",
+  "outages": [
+    {
+      "from": "05:48:18.490",
+      "to": "05:48:22.026",
+      "seconds": 3.536059,
+      "errors_in_window": 8,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "timeout: context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 1669,
+    "p50": 15,
+    "p95": 56,
+    "p99": 90
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "run": "starve-pin-4",
+  "attempts": 37002,
+  "acked": 36955,
+  "failed": 39,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "06:03:59.532",
+  "last_event": "06:06:59.474",
+  "outages": [
+    {
+      "from": "06:05:01.349",
+      "to": "06:05:13.334",
+      "seconds": 11.984849,
+      "errors_in_window": 46,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "context deadline exceeded": 39,
+    "timeout: context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 2301,
+    "p50": 14,
+    "p95": 117,
+    "p99": 255
+  }
+}

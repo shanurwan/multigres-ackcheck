@@ -1,0 +1,46 @@
+{
+  "run": "lagcrash-1",
+  "attempts": 31000,
+  "acked": 29065,
+  "failed": 1935,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 8,
+  "unexpected_rows": 0,
+  "first_event": "05:42:49.885",
+  "last_event": "05:46:09.809",
+  "outages": [
+    {
+      "from": "05:43:21.772",
+      "to": "05:43:28.108",
+      "seconds": 6.33628,
+      "errors_in_window": 351,
+      "first_error": "08006 connection to server lost"
+    },
+    {
+      "from": "05:43:30.777",
+      "to": "05:43:41.117",
+      "seconds": 10.340098,
+      "errors_in_window": 1584,
+      "first_error": "57P03 database is temporarily unavailable; please retry"
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 8,
+    "28P01 password authentication failed for user \"postgres\"": 3,
+    "57014 canceling statement due to user request": 1,
+    "57P03 database is temporarily unavailable; please retry": 383,
+    "57P03 no writable primary is currently available": 1535,
+    "MTF01 planned failover in progress": 5
+  },
+  "ok_latency_ms": {
+    "p100": 572,
+    "p50": 11,
+    "p95": 35,
+    "p99": 68
+  }
+}

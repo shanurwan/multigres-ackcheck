@@ -1,0 +1,90 @@
+{
+  "run": "forcekill-5",
+  "attempts": 3542,
+  "acked": 1945,
+  "failed": 1541,
+  "ambiguous": 56,
+  "lost_acked": 42,
+  "lost_acked_sample": [
+    "7/241",
+    "3/240",
+    "2/239",
+    "4/249",
+    "0/248",
+    "6/249",
+    "5/243",
+    "1/252",
+    "7/242",
+    "2/240",
+    "3/241",
+    "0/249",
+    "5/244",
+    "7/243",
+    "4/250",
+    "6/250",
+    "1/253",
+    "2/241",
+    "3/242",
+    "4/251"
+  ],
+  "ambiguous_present": 48,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:17:09.883",
+  "last_event": "05:19:09.965",
+  "outages": [
+    {
+      "from": "05:17:44.407",
+      "to": "05:17:45.663",
+      "seconds": 1.25591,
+      "errors_in_window": 4,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:18:06.163",
+      "to": "05:18:09.187",
+      "seconds": 3.023744,
+      "errors_in_window": 7,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:18:09.187",
+      "to": "05:18:11.023",
+      "seconds": 1.836285,
+      "errors_in_window": 2,
+      "first_error": "context deadline exceeded"
+    },
+    {
+      "from": "05:18:16.103",
+      "to": "05:18:20.920",
+      "seconds": 4.817658,
+      "errors_in_window": 16,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:18:22.586",
+      "to": "05:18:24.084",
+      "seconds": 1.498004,
+      "errors_in_window": 3,
+      "first_error": "timeout: context deadline exceeded"
+    },
+    {
+      "from": "05:18:26.019",
+      "to": "05:18:27.596",
+      "seconds": 1.576395,
+      "errors_in_window": 4,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "connection refused": 1539,
+    "context deadline exceeded": 2,
+    "timeout: context deadline exceeded": 56
+  },
+  "ok_latency_ms": {
+    "p100": 3709,
+    "p50": 181,
+    "p95": 1298,
+    "p99": 1988
+  }
+}

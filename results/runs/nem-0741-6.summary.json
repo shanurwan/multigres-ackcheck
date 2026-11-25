@@ -1,0 +1,50 @@
+{
+  "run": "nem-0741-6",
+  "attempts": 85952,
+  "acked": 82838,
+  "failed": 3106,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 6,
+  "failed_present": 1,
+  "unexpected_rows": 0,
+  "first_event": "07:41:07.157",
+  "last_event": "07:45:07.123",
+  "outages": [
+    {
+      "from": "07:42:07.623",
+      "to": "07:42:15.898",
+      "seconds": 8.275624,
+      "errors_in_window": 2244,
+      "first_error": "08006 connection to server lost"
+    },
+    {
+      "from": "07:43:04.764",
+      "to": "07:43:08.923",
+      "seconds": 4.159717,
+      "errors_in_window": 863,
+      "first_error": "unexpected EOF"
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 8,
+    "28P01 password authentication failed for user \"postgres\"": 5,
+    "57P03 database is temporarily unavailable; please retry": 338,
+    "57P03 no writable primary is currently available": 1893,
+    "connection refused": 847,
+    "context deadline exceeded": 12,
+    "i/o timeout": 3,
+    "read tcp 10.0.2.15:44942-\u003e10.43.57.167:5432: read: connection reset by peer": 1,
+    "read tcp 10.0.2.15:44946-\u003e10.43.57.167:5432: read: connection reset by peer": 1,
+    "unexpected EOF": 6
+  },
+  "ok_latency_ms": {
+    "p100": 586,
+    "p50": 12,
+    "p95": 35,
+    "p99": 53
+  }
+}

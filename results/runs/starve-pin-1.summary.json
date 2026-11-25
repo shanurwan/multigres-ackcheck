@@ -1,0 +1,36 @@
+{
+  "run": "starve-pin-1",
+  "attempts": 38985,
+  "acked": 35921,
+  "failed": 3056,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:51:43.299",
+  "last_event": "05:54:43.240",
+  "outages": [
+    {
+      "from": "05:52:40.249",
+      "to": "05:53:24.051",
+      "seconds": 43.801969,
+      "errors_in_window": 3064,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "57P03 no writable primary is currently available": 2984,
+    "context deadline exceeded": 72,
+    "timeout: context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 855,
+    "p50": 12,
+    "p95": 87,
+    "p99": 183
+  }
+}

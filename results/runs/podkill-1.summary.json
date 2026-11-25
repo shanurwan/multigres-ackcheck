@@ -1,0 +1,32 @@
+{
+  "run": "podkill-1",
+  "attempts": 63109,
+  "acked": 63093,
+  "failed": 8,
+  "ambiguous": 8,
+  "lost_acked": 0,
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "05:03:22.200",
+  "last_event": "05:06:22.145",
+  "outages": [
+    {
+      "from": "05:04:05.196",
+      "to": "05:04:14.032",
+      "seconds": 8.836109,
+      "errors_in_window": 16,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "context deadline exceeded": 8,
+    "timeout: context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 1025,
+    "p50": 11,
+    "p95": 32,
+    "p99": 58
+  }
+}

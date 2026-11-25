@@ -1,0 +1,36 @@
+{
+  "run": "nem-0736-5",
+  "attempts": 87406,
+  "acked": 87387,
+  "failed": 19,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 1,
+  "unexpected_rows": 0,
+  "first_event": "07:36:08.887",
+  "last_event": "07:40:08.939",
+  "outages": [
+    {
+      "from": "07:37:03.911",
+      "to": "07:37:06.235",
+      "seconds": 2.324165,
+      "errors_in_window": 19,
+      "first_error": "08006 connection to server lost"
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 8,
+    "28P01 password authentication failed for user \"postgres\"": 3,
+    "context deadline exceeded": 8
+  },
+  "ok_latency_ms": {
+    "p100": 337,
+    "p50": 11,
+    "p95": 33,
+    "p99": 56
+  }
+}

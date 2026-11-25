@@ -1,0 +1,24 @@
+{
+  "run": "starve-only-3",
+  "attempts": 14061,
+  "acked": 14061,
+  "failed": 0,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "06:14:52.326",
+  "last_event": "06:17:52.289",
+  "outages": null,
+  "error_kinds": {},
+  "ok_latency_ms": {
+    "p100": 1540,
+    "p50": 28,
+    "p95": 448,
+    "p99": 711
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "run": "two-C1-0942",
+  "attempts": 31889,
+  "acked": 29311,
+  "failed": 2261,
+  "ambiguous": 317,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 314,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "09:42:38.456",
+  "last_event": "09:48:08.338",
+  "outages": [
+    {
+      "from": "09:43:43.314",
+      "to": "09:45:26.783",
+      "seconds": 103.468168,
+      "errors_in_window": 2578,
+      "first_error": "unexpected EOF"
+    }
+  ],
+  "error_kinds": {
+    "connection refused": 2261,
+    "read tcp 10.0.2.15:50392-\u003e10.43.195.219:5432: read: connection reset by peer": 1,
+    "read tcp 10.0.2.15:50428-\u003e10.43.195.219:5432: read: connection reset by peer": 1,
+    "timeout: context deadline exceeded": 309,
+    "unexpected EOF": 6
+  },
+  "ok_latency_ms": {
+    "p100": 2656,
+    "p50": 14,
+    "p95": 72,
+    "p99": 451
+  }
+}

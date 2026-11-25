@@ -1,0 +1,34 @@
+{
+  "run": "nem-0757-2",
+  "attempts": 31316,
+  "acked": 31276,
+  "failed": 0,
+  "ambiguous": 40,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 40,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "07:57:10.468",
+  "last_event": "08:01:10.410",
+  "outages": [
+    {
+      "from": "08:00:24.763",
+      "to": "08:00:36.826",
+      "seconds": 12.063451,
+      "errors_in_window": 40,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "timeout: context deadline exceeded": 40
+  },
+  "ok_latency_ms": {
+    "p100": 1983,
+    "p50": 18,
+    "p95": 255,
+    "p99": 480
+  }
+}

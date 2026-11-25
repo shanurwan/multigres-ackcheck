@@ -1,0 +1,34 @@
+{
+  "run": "two-A1-0900",
+  "attempts": 49301,
+  "acked": 49221,
+  "failed": 0,
+  "ambiguous": 80,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 80,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "09:00:06.955",
+  "last_event": "09:05:36.867",
+  "outages": [
+    {
+      "from": "09:00:51.678",
+      "to": "09:01:12.623",
+      "seconds": 20.94474,
+      "errors_in_window": 80,
+      "first_error": "timeout: context deadline exceeded"
+    }
+  ],
+  "error_kinds": {
+    "timeout: context deadline exceeded": 80
+  },
+  "ok_latency_ms": {
+    "p100": 722,
+    "p50": 9,
+    "p95": 31,
+    "p99": 56
+  }
+}

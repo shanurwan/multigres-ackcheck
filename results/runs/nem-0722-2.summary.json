@@ -1,0 +1,46 @@
+{
+  "run": "nem-0722-2",
+  "attempts": 49060,
+  "acked": 40639,
+  "failed": 8421,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 6,
+  "unexpected_rows": 0,
+  "first_event": "07:22:14.522",
+  "last_event": "07:26:14.427",
+  "outages": [
+    {
+      "from": "07:23:59.787",
+      "to": "07:24:20.039",
+      "seconds": 20.251839,
+      "errors_in_window": 82,
+      "first_error": "08006 connection to server lost"
+    },
+    {
+      "from": "07:24:30.080",
+      "to": "07:25:25.710",
+      "seconds": 55.629939,
+      "errors_in_window": 8323,
+      "first_error": "57P03 database is temporarily unavailable; please retry"
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 8,
+    "28P01 password authentication failed for user \"postgres\"": 2,
+    "57P03 database is temporarily unavailable; please retry": 35,
+    "57P03 no writable primary is currently available": 8269,
+    "MTF01 planned failover in progress": 6,
+    "context deadline exceeded": 101
+  },
+  "ok_latency_ms": {
+    "p100": 1582,
+    "p50": 13,
+    "p95": 84,
+    "p99": 189
+  }
+}

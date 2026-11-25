@@ -1,0 +1,66 @@
+{
+  "run": "authchurn-1",
+  "attempts": 17274,
+  "acked": 15371,
+  "failed": 1903,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 0,
+  "unexpected_rows": 0,
+  "first_event": "07:45:38.482",
+  "last_event": "07:49:28.375",
+  "outages": [
+    {
+      "from": "07:46:10.711",
+      "to": "07:46:18.731",
+      "seconds": 8.020184,
+      "errors_in_window": 29,
+      "first_error": "08006 connection to server lost"
+    },
+    {
+      "from": "07:46:51.178",
+      "to": "07:46:59.012",
+      "seconds": 7.83386,
+      "errors_in_window": 616,
+      "first_error": "28P01 password authentication failed for user \"postgres\""
+    },
+    {
+      "from": "07:47:31.379",
+      "to": "07:47:39.025",
+      "seconds": 7.646237,
+      "errors_in_window": 485,
+      "first_error": "28P01 password authentication failed for user \"postgres\""
+    },
+    {
+      "from": "07:48:11.090",
+      "to": "07:48:21.206",
+      "seconds": 10.115615,
+      "errors_in_window": 767,
+      "first_error": "28P01 password authentication failed for user \"postgres\""
+    },
+    {
+      "from": "07:48:50.495",
+      "to": "07:48:53.145",
+      "seconds": 2.650032,
+      "errors_in_window": 6,
+      "first_error": "28P01 password authentication failed for user \"postgres\""
+    }
+  ],
+  "error_kinds": {
+    "08006 connection to server lost": 9,
+    "28P01 password authentication failed for user \"postgres\"": 24,
+    "57P03 database is temporarily unavailable; please retry": 870,
+    "57P03 no writable primary is currently available": 984,
+    "context deadline exceeded": 16
+  },
+  "ok_latency_ms": {
+    "p100": 2698,
+    "p50": 32,
+    "p95": 83,
+    "p99": 161
+  }
+}

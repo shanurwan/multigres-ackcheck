@@ -1,0 +1,26 @@
+{
+  "run": "nem-1",
+  "attempts": 57507,
+  "acked": 19058,
+  "failed": 38449,
+  "ambiguous": 0,
+  "lost_acked": 0,
+  "acked_with_syncrep_warning": 0,
+  "lost_with_syncrep_warning": 0,
+  "notices": {},
+  "ambiguous_present": 0,
+  "failed_present": 38449,
+  "unexpected_rows": 0,
+  "first_event": "07:12:18.422",
+  "last_event": "07:16:18.324",
+  "outages": null,
+  "error_kinds": {
+    "23505 duplicate key value violates unique constraint \"ackcheck_pkey\"": 38449
+  },
+  "ok_latency_ms": {
+    "p100": 226,
+    "p50": 13,
+    "p95": 35,
+    "p99": 57
+  }
+}
